@@ -33,12 +33,12 @@ for (i in 1:length(CountryCodes$Code)){
     final_PSEData <- rbind(final_PSEData,myPSEData)
     },
     warning = function(war){
-      print(paste("MY_WARNING:  ",war))
-      print(searchString)
+      print(war)
+      print(paste("requested string: ",searchString)
     },
     error = function(err){
-      print(paste("MY_ERROR:  ",err))
-      print(searchString)
+      print(err)
+      print(paste("requested string: ",searchString)
     }
   )#end tryCatch
 
