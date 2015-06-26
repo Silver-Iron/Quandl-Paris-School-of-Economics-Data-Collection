@@ -34,11 +34,11 @@ for (i in 1:length(CountryCodes$Code)){
     },
     warning = function(war){
       print(war)
-      print(paste("requested string: ",searchString)
+      print(paste("requested string: ",searchString))
     },
     error = function(err){
       print(err)
-      print(paste("requested string: ",searchString)
+      print(paste("requested string: ",searchString))
     }
   )#end tryCatch
 
